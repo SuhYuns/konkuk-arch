@@ -1,0 +1,63 @@
+/* global */
+
+main {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+
+.info {
+  float: left;
+  padding-top: 100px;
+}
+
+.main-menu {
+  float: right;
+  padding-right: 100px;
+  margin-bottom: 200px;
+}
+
+
+/* info */
+
+.info ul {
+  padding: 0;
+}
+
+.info li {
+  list-style: none;
+  font-size: 18px;
+}
+
+.info .info-bold {
+  font-weight: bold;
+}
+
+.info .info-content {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* main-menu */
+
+
+.main-menu ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 75px;
+}
+
+
+/* footer */
+
+.footer {
+  clear: both;
+  color: #717171;
+  font-size : 10px;
+  
+}
