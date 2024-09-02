@@ -1,0 +1,155 @@
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.main-content {
+    /* padding: 20px; */
+}
+
+#exhibition_btn {
+    /* transition: opacity 0.3s ease-in-out; */
+    width: 100px;
+}
+
+#exhibition_btn:hover {
+    content: url('/img/exhibition_btn_hover.png'); /* hover 시 이미지 교체 */
+  }
+
+
+
+/* 작은 화면용 (모바일) */
+@media only screen and (max-width: 768px) {
+    .header {
+        font-size: 20px;
+    }
+
+    .header .top-list {
+        display: none;
+    }
+
+    .header .top-list .title {
+        display: block;
+    }
+
+    .main-content .main-left {
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    .main-content .main-left video {
+        width: 100%;
+        height: auto;
+        /* flex-shrink: 0; */
+    }
+
+
+    .exhibition-logo {
+        display: none;
+
+    }
+}
+
+/* 중간 크기 화면용 (태블릿) */
+/* @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .header {
+        font-size: 24px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+} */
+
+/* 큰 화면용 (데스크탑) */
+@media only screen and (min-width: 768px) {
+    .header {
+        font-size: 28px;
+        /* padding-bottom: 100px; */
+        height: 80px;
+    }
+
+    .header .top-list {
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        list-style-type: none; /* 불릿 제거 */
+        margin-top : 20px;
+    }
+
+    .header .top-list li {
+        display: inline-block;
+        margin-right: 10px; /* 요소 간의 간격 */
+    }
+
+    .header .top-list .title {
+        margin-right: 100px;
+        width: 100px;
+    }
+
+    .main-content {
+        margin-left: 100px;
+        margin-right: 100px;
+        overflow: hidden; /* float를 사용하는 경우, 컨테이너가 자식 요소를 포함하도록 하기 위해 필요할 수 있음 */
+    }
+
+    .main-content .main-left {
+        float: left;
+        width: 50%; /* 좌측 콘텐츠의 너비를 50%로 설정 */
+    }
+
+    .main-content .main-left video {
+        height: 851px;
+        width: 100%; /* 부모 요소에 맞게 비디오 크기 조정 */
+    }
+
+    .main-content .main-right {
+        float: right;
+        width: 50%; /* 우측 콘텐츠의 너비를 50%로 설정 */
+        
+    }
+
+    .exhibition-logo {
+        width: 250px;
+
+    }
+
+    .exhibition-title {
+        width: 250px;
+        text-align: right;
+
+    }
+
+    .title1 {
+        font-size: 60px;
+        text-align: right;
+        margin-bottom: 0;
+    }
+    .title2 {
+        font-size: 40px;
+        text-align: right;
+        margin-top: 0;
+    }
+
+    .exhibition-content {
+        color: #000;
+        text-align: right;
+        font-family: Pretendard;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -1.05px;
+    }
+}
+
